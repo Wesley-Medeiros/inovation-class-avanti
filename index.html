@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Avanti</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="cupomContainer">
+            <p>Ganhe <span class="valor">R$ 10,00</span> no seu primeiro pedido. Utilize o cupom <span class="cupom">DESCONTO10</span></p>
+        </div>
+        <div class="mainContainer">
+            <div class="mobile-top-row">
+                <img src="assets/menuIcon.svg" alt="Menu" class="menuIcon mobile-only">
+                <img src="assets/logo.svg" alt="Avanti" class="logo mobile-logo">
+                <div class="clientContainer mobile-cart">
+                    <div class="cartWrapper">
+                        <img src="assets/cartIcon.svg" alt="Carrinho">
+                        <span class="cartCount">2</span>
+                    </div>
+                </div>
+            </div>            
+            <img src="assets/logo.svg" alt="Avanti" class="logo desktop-only">
+            <div class="searchContainer desktop-only">
+                <input placeholder="Digite aqui o que você procura" type="text">
+                <button class="searchButton">
+                    <img src="assets/searchIcon.svg">
+                </button>
+                <div class="searchDropdown" style="display: none;">
+                    <p>Você buscou por: <span class="searchTerm"></span></p>
+                </div>
+            </div>
+            <div class="clientContainer desktop-only">
+                <div class="accountInfo">
+                    <img src="assets/accountIcon.svg" alt="Minha conta">
+                    <span>
+                        Olá, <br>
+                        <strong>Nome do cliente</strong>
+                    </span>
+                </div>
+                <div class="cartWrapper">
+                    <img src="assets/cartIcon.svg" alt="Carrinho">
+                    <span class="cartCount">2</span>
+                </div>
+            </div>            
+            <div class="searchContainer mobile-only">
+                <div class="searchWrapper">
+                    <input placeholder="Digite aqui o que você procura" type="text">
+                    <button class="searchButton">
+                        <img src="assets/searchIcon.svg">
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        <nav class="menuContainer">
+            <div class="menuWrapper">
+                <img src="assets/menuIcon.svg" alt="Menu">
+                <h2>Todas as categorias</h2>
+            </div>
+            <div class="categoryWrapper">
+                <a href="#" class="department-link">Departamento</a>
+                <a href="#" class="department-link">Departamento</a>
+                <a href="#" class="department-link">Departamento</a>
+                <a href="#" class="department-link">Departamento</a>
+                <a href="#" class="department-link">Departamento</a>
+                <a href="#" class="department-link">Departamento</a>
+                <a href="#" class="department-link">Departamento</a>
+                <a href="#" class="department-link">Departamento</a>
+            </div>
+            <div class="megaDropdown">
+                <div class="dropdownSidebar">
+                    <p>Departamento <img src="assets/arrow.svg" class="chevron"></p>
+                    <p>Departamento <img src="assets/arrow.svg" class="chevron"></p>
+                    <p>Departamento <img src="assets/arrow.svg" class="chevron"></p>
+                    <p>Departamento <img src="assets/arrow.svg" class="chevron"></p>
+                    <p>Departamento <img src="assets/arrow.svg" class="chevron"></p>
+                    <p>Departamento <img src="assets/arrow.svg" class="chevron"></p>
+                    <p>Departamento <img src="assets/arrow.svg" class="chevron"></p>
+                    <p>Departamento <img src="assets/arrow.svg" class="chevron"></p>
+                    <p>Departamento <img src="assets/arrow.svg" class="chevron"></p>
+                    <p>Departamento <img src="assets/arrow.svg" class="chevron"></p>
+                    <p>Departamento <img src="assets/arrow.svg" class="chevron"></p>
+                    <p>Departamento <img src="assets/arrow.svg" class="chevron"></p>
+                    <p>Departamento <img src="assets/arrow.svg" class="chevron"></p>
+                </div>
+                <div class="categoryColumns">
+                    <div class="categoryColumn">
+                        <div class="categoryItem">
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                        </div>
+                    </div>
+                    <div class="categoryColumn">
+                        <div class="categoryItem">
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                        </div>
+                    </div>
+                    <div class="categoryColumn">
+                        <div class="categoryItem">
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                            <p>Categoria</p>
+                        </div>
+                    </div>
+                    <div class="categoryColumn">
+                        <div class="imageBanner">
+                            <img src="assets/muggleBanner2.png" alt="Banner">
+                            <div class="bannerContent">
+                                <p class="bannerText">Confira os Produtos <br>Que <br>acabaram <br>De chegar</p>
+                                <button class="bannerButton">VER TODOS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-carousel">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="assets/hero-mobile.png">
+                    <source media="(min-width: 769px)" srcset="assets/hero.png">
+                    <img class="hero" src="assets/hero.png" alt="Banner principal 1">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="assets/hero-mobile.png">
+                    <source media="(min-width: 769px)" srcset="assets/hero.png">
+                    <img class="hero" src="assets/hero.png" alt="Banner principal 2">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="assets/hero-mobile.png">
+                    <source media="(min-width: 769px)" srcset="assets/hero.png">
+                    <img class="hero" src="assets/hero.png" alt="Banner principal 3">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+          
+              
+            </div>
+          </div>
+          <section class="carrosselContainer">
+            <div class="sectionHeader">
+                <h2>Lançamentos</h2>
+                <a href="#" class="seeAll">Ver mais</a>
+            </div>
+            
+            <!-- Versão Desktop (5 produtos por slide) -->
+            <div class="carrosselDesktop swiper">
+                <div class="carrosselItems swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="productGroup swiper-slide">
+                        <!-- 5 produtos aqui (manter o conteúdo original) -->
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="productGroup swiper-slide">
+                        <!-- 5 produtos aqui (manter o conteúdo original) -->
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carrosselButton prev">
+                    <img src="assets/arrow-left.svg" alt="Anterior">
+                </div>
+                <div class="carrosselButton next">
+                    <img src="assets/arrow-right.svg" alt="Próximo">
+                </div>
+                <div class="carrosselPagination"></div>
+            </div>            
+            <div class="carrosselMobile swiper">
+                <div class="carrosselItems swiper-wrapper">
+                    <div class="productGroup swiper-slide">
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="productGroup swiper-slide">
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="productGroup swiper-slide">
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carrosselPagination"></div>
+            </div>
+        </section>
+        <section class="itemDescriptionSection">
+            <div class="container">
+                <div class="itemDescriptionWrapper">
+                    <div class="imageContainer">
+                        <img src="assets/muggleBanner.png" alt="Descrição da imagem">
+                    </div>
+                    <div class="textContent">
+                        <h2>LOREM IPSUM</h2>
+                        <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+                        <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featuresSection">
+            <div class="container">
+                <div class="featuresWrapper">
+                    <div class="textContent">
+                        <h2>LOREM IMPSUM</h2>
+                        <div class="featuresList">
+                            <div class="featureItem">
+                                <div class="iconCircle">
+                                    <img src="assets/map-pin.svg" alt="Ícone localização">
+                                </div>
+                                <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                            </div>                            
+                            <div class="featureItem">
+                                <div class="iconCircle">
+                                    <img src="assets/map-pin.svg" alt="Ícone localização">
+                                </div>
+                                <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                            </div>                            
+                            <div class="featureItem">
+                                <div class="iconCircle">
+                                    <img src="assets/map-pin.svg" alt="Ícone localização">
+                                </div>
+                                <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="imageContainer">
+                        <img src="assets/muggleBanner2.png" alt="Caneca decorativa">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="itemDescriptionSection">
+            <div class="container">
+                <div class="itemDescriptionWrapper">
+                    <div class="imageContainer">
+                        <img src="assets/muggleBanner.png" alt="Descrição da imagem">
+                    </div>
+                    <div class="textContent">
+                        <h2>LOREM IPSUM</h2>
+                        <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+                        <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="carrosselContainer">
+            <div class="sectionHeader">
+                <h2>Lançamentos</h2>
+                <a href="#" class="seeAll">Ver mais</a>
+            </div>
+            
+            <!-- Versão Desktop (5 produtos por slide) -->
+            <div class="carrosselDesktop swiper">
+                <div class="carrosselItems swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="productGroup swiper-slide">
+                        <!-- 5 produtos aqui (manter o conteúdo original) -->
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="productGroup swiper-slide">
+                        <!-- 5 produtos aqui (manter o conteúdo original) -->
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carrosselButton prev">
+                    <img src="assets/arrow-left.svg" alt="Anterior">
+                </div>
+                <div class="carrosselButton next">
+                    <img src="assets/arrow-right.svg" alt="Próximo">
+                </div>
+                <div class="carrosselPagination"></div>
+            </div>            
+            <div class="carrosselMobile swiper">
+                <div class="carrosselItems swiper-wrapper">
+                    <div class="productGroup swiper-slide">
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="productGroup swiper-slide">
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="productGroup swiper-slide">
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                        <div class="productCard">
+                            <div class="productImage">
+                                <img src="assets/item.png" alt="Produto">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="priceWrapper">
+                                <div class="prices">
+                                    <p class="oldPrice">R$ 100,00</p>
+                                    <strong class="currentPrice">R$79,90</strong>
+                                </div>
+                                <span class="discountTag">10% OFF</span>
+                            </div>
+                            <p class="installment">Ou em até 10x de R$ 7,90</p>
+                            <button class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carrosselPagination"></div>
+            </div>
+        </section>
+        <section>
+            <picture>
+                <source media="(max-width: 768px)" srcset="assets/hero2-mobile.png">
+                <source media="(min-width: 769px)" srcset="assets/hero2.png">
+                <img class="hero" src="assets/hero2.png" alt="Banner principal">
+              </picture>
+        </section>
+        <section class="newsletterSection">
+            <h2>Cadastre-se na nossa <span>newsletter</span></h2>
+            <div class="registrationFormContainer">
+                <form class="registrationForm">
+                    <div class="inputGroup">
+                        <input type="text" placeholder="Digite seu nome" class="formInput">
+                        <input type="email" placeholder="Digite seu e-mail" class="formInput">
+                    </div>
+                    <div class="checkboxGroup">
+                        <input type="checkbox" id="privacyCheck">
+                        <label for="privacyCheck">Estou de acordo com a <a href="#">Política de Privacidade</a></label>
+                    </div>
+                    <button type="submit" class="submitButton">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footerTop">
+            <div class="footerContent">
+                <div class="footerMain">
+                    <div class="brandSection">
+                        <img src="assets/logo.svg" alt="Company Logo" class="footerLogo">
+                        <div class="socialIcons">
+                            <img src="assets/instagram.svg" alt="Instagram">
+                            <img src="assets/facebook.svg" alt="Facebook">
+                            <img src="assets/youtube-logo.svg" alt="YouTube">
+                            <img src="assets/logo-tiktok-svgrepo-com.svg" alt="TikTok">
+                        </div>
+                    </div>
+                    <div class="footerLinks">
+                        <div class="linkColumn">
+                            <h4>Institucional</h4>
+                            <div class="columnContent">
+                                <a href="#">Sobre nós</a>
+                                <a href="#">Nossas Lojas</a>
+                                <a href="#">Privacidade e Segurança</a>
+                                <a href="#">Termos e Condições</a>
+                            </div>
+                        </div>
+                        <div class="linkColumn">
+                            <h4>Central de ajuda</h4>
+                            <div class="columnContent">
+                                <a href="#">Fale Conosco</a>
+                                <a href="#">Frete e Entrega</a>
+                                <a href="#">Trocas e Devoluções</a>
+                                <a href="#">Formas de Pagamento</a>
+                                <a href="#">FAQ</a>
+                            </div>
+                        </div>
+                        <div class="linkColumn">
+                            <h4>Atendimento</h4>
+                            <div class="columnContent">
+                                <p>Telefone: (00) 1234-5678</p>
+                                <p>E-mail: exemplo@exemplo.com.br</p>
+                                <p>Privacidade e Segurança</p>
+                                <p class="openingHours">
+                                    Horário de atendimento: <br>
+                                    Segunda a Sábado: 07h00 às 23h00 <br>
+                                    Domingos e Feriados: 07h00 às 21h00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="paymentMethods">
+                    <img src="assets/amex.svg" alt="American Express">
+                    <img src="assets/União 32.svg" alt="Mastercard">
+                    <img src="assets/visa.svg" alt="Visa">
+                    <img src="assets/hipercard.svg" alt="Hipercard">
+                    <img src="assets/b.svg" alt="Elo">
+                    <img src="assets/b (1).svg" alt="Boleto">
+                    <img src="assets/paypal-seeklogo.com.svg" 
+                </div>
+            </div>
+        </section>
+        <section class="footerBottom">
+            <div class="footerBottomContent">
+                <p class="copyrightText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                <div class="certifications">
+                    <div class="certificationGroup">
+                        <img src="assets/le-logo-standard.png" alt="Certificação 1">
+                        <img src="assets/vtex-pci-200.svg" alt="Certificação 2">
+                    </div>
+                    <div class="divider"></div>
+                    <div class="certificationGroup">
+                        <img src="assets/logo.svg" alt="Logo">
+                        <img src="assets/VTEX_Logo (1) 1.svg" alt="VTEX Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
