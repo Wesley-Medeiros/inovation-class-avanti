@@ -68,7 +68,59 @@ header .mainContainer .searchContainer.desktop-only {
   position: relative;
 }
 header .mainContainer .searchContainer.mobile-only {
-  display: none;
+  display: none; /* Inicialmente escondido */
+  width: 100%;
+  position: relative;
+}
+header .mainContainer .searchContainer.mobile-only .searchWrapper {
+  width: 100%;
+  position: relative;
+}
+header .mainContainer .searchContainer.mobile-only input {
+  width: 100%;
+  padding: 12px 36px 12px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+header .mainContainer .searchContainer.mobile-only input:focus {
+  border-color: #005CFF;
+  box-shadow: 0 0 0 2px rgba(0, 92, 255, 0.1);
+}
+header .mainContainer .searchContainer.mobile-only .searchButton {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+header .mainContainer .searchContainer.mobile-only .searchButton img {
+  width: 18px;
+  height: 18px;
+}
+header .mainContainer .searchContainer.mobile-only .searchDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0 0 8px 8px;
+  padding: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+header .mainContainer .searchContainer.mobile-only .searchDropdown p {
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  header .mainContainer .searchContainer.mobile-only {
+    display: flex;
+  }
 }
 header .mainContainer .clientContainer.desktop-only {
   display: flex;
