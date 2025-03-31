@@ -68,7 +68,7 @@ header .mainContainer .searchContainer.desktop-only {
   position: relative;
 }
 header .mainContainer .searchContainer.mobile-only {
-  display: none; /* Inicialmente escondido */
+  display: none;
   width: 100%;
   position: relative;
 }
@@ -1437,4 +1437,3 @@ footer .footerBottom .certifications .divider {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
