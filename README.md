@@ -43,8 +43,8 @@ A Aplicação deve conter de base:
 </table>
 <table>
   <tr>
-    <td valign="top"><img src="https://github.com/user-attachments/assets/e3f0cbbe-5112-4748-a21e-0a9d339ac2d4" width="300"/></td>
     <td valign="top"><img src="https://github.com/user-attachments/assets/a6240ecd-238e-4a0e-b09e-c2e96cda919e" width="300"/></td>
+    <td valign="top"><img src="https://github.com/user-attachments/assets/e3f0cbbe-5112-4748-a21e-0a9d339ac2d4" width="300"/></td>
     <td valign="top"><img src="https://github.com/user-attachments/assets/90127692-38af-43a8-be9a-069ebaf19337" width="300"/></td>
   </tr>
 </table>
