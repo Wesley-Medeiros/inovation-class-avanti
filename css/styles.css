@@ -1301,7 +1301,7 @@ footer .paymentMethods {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 34px;
   padding: 30px 0;
 }
 footer .paymentMethods img {
